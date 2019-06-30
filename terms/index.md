@@ -20,7 +20,7 @@ Los patrones de diseño son estarategias, convenciones ó lineamientos que hay q
 ### Git Flow:
 Git Flow se refiere al flujo o lineamientos que hay que seguir para el manejo de nuestros repositorios de código, ramas que hay que utilizar y las respectivas normas y restricciones entre cada unas. A su vez establece el flujo que debe seguir un desarrollador para implementar un feature o hotfix de código.
 
-### Infrastuctura:
+### Infraestuctura:
 Se refiere al conjunto de servicios, servidores y tecnología de hardware que debe estar en ejecución para que nuestro software pueda ser desplegado y accedido por los usuarios.
 
 ### Plataforma:
