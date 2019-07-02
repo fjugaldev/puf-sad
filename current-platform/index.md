@@ -1,7 +1,6 @@
 ---
 currentMenu: current_platform
 ---
-![PUF Logo](../assets/images/logos/puf-logo-blue.png)
 
 # Plataforma Actual de PUF Travel
 Actualmente se conforma por dos principales proyectos, un proyecto para toda la interfaz WEB y otro para el API. Procederemos a detallar de cada uno lo siguiente:

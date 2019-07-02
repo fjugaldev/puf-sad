@@ -1,7 +1,6 @@
 ---
 currentMenu: intro
 ---
-![PUF Logo](./assets/images/logos/puf-logo-blue.png)
 
 # DOCUMENTO DE ARQUITECTURA DE SOFTWARE
 

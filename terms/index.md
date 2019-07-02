@@ -1,7 +1,6 @@
 ---
 currentMenu: terms
 ---
-![PUF Logo](../assets/images/logos/puf-logo-blue.png)
 
 #Definición de Términos
 

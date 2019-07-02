@@ -1,9 +1,12 @@
 template:
-    url: https://github.com/CouscousPHP/Template-ReadTheDocs
+    #url: https://github.com/CouscousPHP/Template-ReadTheDocs
+    #url: https://github.com/pnowy/CouscousNativeTemplate
     #url: https://github.com/CouscousPHP/Template-Dark
+    url: https://github.com/fjugaldev/Template-Dark.git
     #url: https://github.com/elephantly/ElephantlyCouscous
     #url: https://github.com/dracula/couscous.git
-title: PUF Travel - DAS
+#title: PUF Travel - DAS
+path_logo: "/assets/images/logos/puf-logo-white.png"
 subTitle: Documento de Arquitectura de Software
 
 github:
@@ -12,38 +15,43 @@ github:
 
 branch: gh-pages
 
+fontAwesomeIcon: fa fa-hand-peace-o
+footerText: This is a footer text
+googleAnalyticsCode: GOOGLE-ANALYTICS-CODE
+
+
 menu:
-    #sections:
-    #    main:
-    #        name: Main documentation
-    items:
-        intro:
-            text: "<i class=\"fa fa-home\"></i> Introducción"
-            # You can use relative urls
-            relativeUrl: index.html
-        terms:
-            text: "<i class=\"fa fa-book\"></i> Terminología"
-            # You can use relative urls
-            relativeUrl: terms/index.html
-        current_platform:
-            text: "<i class=\"fa fa-laptop\"></i> Plataforma actual"
-            # You can use relative urls
-            relativeUrl: current-platform/index.html
-        proposed_platform:
-            text: "<i class=\"fa fa-code\"></i> Plataforma propuesta"
-            # You can use relative urls
-            relativeUrl: proposed-platform/index.html
-        phases:
-            text: "<i class=\"fa fa-code-fork\"></i> Fases"
-            # You can use relative urls
-            relativeUrl: phases/index.html
-        planning:
-            text: "<i class=\"fa fa-calendar\"></i> Planificación"
-            # You can use relative urls
-            relativeUrl: planning/index.html
-        costs:
-            text: "<i class=\"fa fa-dollar\"></i> Costos"
-            # You can use relative urls
-            relativeUrl: costs/index.html
+    sections:
+        main:
+            name: Menú
+            items:
+                intro:
+                    text: "<i class=\"fa fa-home\"></i> Introducción"
+                    # You can use relative urls
+                    relativeUrl: index.html
+                terms:
+                    text: "<i class=\"fa fa-book\"></i> Terminología"
+                    # You can use relative urls
+                    relativeUrl: terms/index.html
+                current_platform:
+                    text: "<i class=\"fa fa-laptop\"></i> Plataforma actual"
+                    # You can use relative urls
+                    relativeUrl: current-platform/index.html
+                proposed_platform:
+                    text: "<i class=\"fa fa-code\"></i> Plataforma propuesta"
+                    # You can use relative urls
+                    relativeUrl: proposed-platform/index.html
+                phases:
+                    text: "<i class=\"fa fa-code-fork\"></i> Fases"
+                    # You can use relative urls
+                    relativeUrl: phases/index.html
+                planning:
+                    text: "<i class=\"fa fa-calendar\"></i> Planificación"
+                    # You can use relative urls
+                    relativeUrl: planning/index.html
+                costs:
+                    text: "<i class=\"fa fa-dollar\"></i> Costos"
+                    # You can use relative urls
+                    relativeUrl: costs/index.html
 
 baseUrl: https://fjugaldev.github.io/puf-sad    
