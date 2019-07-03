@@ -80,7 +80,96 @@
 
                 
                 <section class="col-sm-offset-4 col-lg-offset-3 col-sm-8 col-lg-9">
-                    
+                    <h1 id="plataforma-propuesta-para-puf-travel">Plataforma Propuesta para PUF Travel</h1>
+<p>Actualmente se conforma por dos principales proyectos, un proyecto para toda la interfaz WEB y otro para el API. Procederemos a detallar de cada uno lo siguiente:</p>
+<p><i class="fa fa-network-wired"></i> Tecnología (Technology)<br />
+<i class="fab fa-symfony"></i> Framework<br />
+<i class="fa fa-hand-peace"></i> Buenas prácticas (Best Practices)<br />
+<i class="fa fa-code"></i> Coding Style <br />
+<i class="fa fa-swatchbook"></i> Patrones de Diseño (Design Patterns)<br />
+<i class="fa fa-box-open"></i> Arquitectura de Software (Software Architecture)<br />
+<i class="fa fa-project-diagram"></i> Infraestructura (Infrastructure)<br />
+<i class="fab fa-git"></i> Git Flow Development (Flujo de Desarrollo GIT)</p>
+<p><br /></p>
+<h3 id="web">WEB</h3>
+<hr />
+<h4 id="tecnologas"> Tecnologías:</h4>
+<ul>
+<li><strong>Lenguaje:</strong> PHP 7.3.x</li>
+<li><strong>Base de Datos:</strong> MySQL 5.7</li>
+<li><strong>Sistema de Colas:</strong> Beanstalkd</li>
+<li><strong>Cache:</strong> Memcached</li>
+<li><strong>Frontend:</strong> Vue.js, Stylus, CSS</li>
+</ul>
+<h4 id="framework">Framework:</h4>
+<ul>
+<li>Laravael v5.7 + Vue.js</li>
+</ul>
+<h3 id="buenas-prcticas">Buenas Prácticas:</h3>
+<ul>
+<li>Escasas, de hecho no se implementan las buenas prácticas oficiales del Framework.</li>
+</ul>
+<h3 id="coding-style">Coding Style:</h3>
+<ul>
+<li>Inexistente, no hay reglas de identación, no se respetan espaciados entre metodos, entre muchos otros errores más.</li>
+</ul>
+<h3 id="patrones-de-diseo-design-patterns">Patrones de Diseño (Design Patterns):</h3>
+<ul>
+<li>Se utilizan los por defecto del Framework.</li>
+</ul>
+<h3 id="arquitectura-de-software-software-architecture">Arquitectura de Software (Software Architecture):</h3>
+<ul>
+<li>Se utiliza la por defecto del Framework.</li>
+</ul>
+<h3 id="infraestructura-infrastructure">Infraestructura (Infrastructure):</h3>
+<ul>
+<li>Se utiliza una instancia de AWS para el despliegue del proyecto.</li>
+</ul>
+<h3 id="git-flow-development-flujo-de-desarrollo-git">Git Flow Development (Flujo de Desarrollo GIT):</h3>
+<ul>
+<li>Ninguno, no se implementa en lo absoluto un GIT Flow para garantizar consistencia en los repositorios de código y sobre todo brindar seguridad en cada release y poder facilmente hacer reverts en producción. No hay control de versiones en el código.</li>
+</ul>
+<p><br /></p>
+<h3 id="api">API</h3>
+<hr />
+<h4 id="tecnologas-1"> Tecnologías:</h4>
+<ul>
+<li><strong>Lenguaje:</strong> PHP 7.3.x</li>
+<li><strong>Base de Datos:</strong> MySQL 5.7</li>
+<li><strong>Sistema de Colas:</strong> Beanstalkd</li>
+<li><strong>Cache:</strong> Memcached</li>
+</ul>
+<h4 id="framework-1">Framework:</h4>
+<ul>
+<li>Laravael v5.7 + Apiato.io</li>
+</ul>
+<h3 id="buenas-prcticas-1">Buenas Prácticas:</h3>
+<ul>
+<li>Escasas, de hecho no se implementan las buenas prácticas oficiales del Framework. Se implementan las de un tercero --&gt; Apiato.io</li>
+</ul>
+<h3 id="coding-style-1">Coding Style:</h3>
+<ul>
+<li>Inexistente, no hay reglas de identación, no se respetan espaciados entre metodos, entre muchos otros errores más.</li>
+</ul>
+<h3 id="patrones-de-diseo-design-patterns-1">Patrones de Diseño (Design Patterns):</h3>
+<ul>
+<li>Se utilizan los propuestos por un tercero --&gt; Apiato.io</li>
+</ul>
+<h3 id="arquitectura-de-software-software-architecture-1">Arquitectura de Software (Software Architecture):</h3>
+<ul>
+<li>Se utiliza la por defecto del Framework más los propuestos por un tercero --&gt; Apiato.io</li>
+</ul>
+<h3 id="infraestructura-infrastructure-1">Infraestructura (Infrastructure):</h3>
+<ul>
+<li>Se utiliza una instancia de AWS para el despliegue del proyecto.</li>
+</ul>
+<h3 id="git-flow-development-flujo-de-desarrollo-git-1">Git Flow Development (Flujo de Desarrollo GIT):</h3>
+<ul>
+<li>Ninguno, no se implementa en lo absoluto un GIT Flow para garantizar consistencia en los repositorios de código y sobre todo brindar seguridad en cada release y poder facilmente hacer reverts en producción. No hay control de versiones en el código.</li>
+</ul>
+<h3 id="diagrama-de-la-infrastructura-y-arquitectura-de-software-propuesta">Diagrama de la Infrastructura y Arquitectura de Software Propuesta</h3>
+<p><br />
+<img src="/assets/images/diagrams/proposed_architecture.png" alt="" /></p>
                 </section>
 
             </div>
