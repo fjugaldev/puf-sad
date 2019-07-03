@@ -77,3 +77,7 @@ Actualmente se conforma por dos principales proyectos, un proyecto para toda la 
 
 ### Git Flow Development (Flujo de Desarrollo GIT):
 - Ninguno, no se implementa en lo absoluto un GIT Flow para garantizar consistencia en los repositorios de código y sobre todo brindar seguridad en cada release y poder facilmente hacer reverts en producción. No hay control de versiones en el código.
+
+### Diagrama de la Infrastructura y Arquitectura de Software Actual
+<br />
+![](/assets/images/diagrams/current_architecture.png)
