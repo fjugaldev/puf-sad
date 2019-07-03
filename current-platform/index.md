@@ -80,4 +80,4 @@ Actualmente se conforma por dos principales proyectos, un proyecto para toda la 
 
 ### Diagrama de la Infrastructura y Arquitectura de Software Actual
 <br />
-![](/assets/images/diagrams/current_architecture.png)
+![](../assets/images/diagrams/current_architecture.png)
