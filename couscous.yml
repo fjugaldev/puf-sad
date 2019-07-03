@@ -6,7 +6,7 @@ template:
     #url: https://github.com/elephantly/ElephantlyCouscous
     #url: https://github.com/dracula/couscous.git
 #title: PUF Travel - DAS
-path_logo: "/assets/images/logos/puf-logo-white.png"
+path_logo: "assets/images/logos/puf-logo-white.png"
 subTitle: Documento de Arquitectura de Software
 
 github:
