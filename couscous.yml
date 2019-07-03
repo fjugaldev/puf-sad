@@ -34,23 +34,23 @@ menu:
                     # You can use relative urls
                     relativeUrl: terms/index.html
                 current_platform:
-                    text: "<i class=\"fa fa-laptop\"></i> Plataforma actual"
+                    text: "<i class=\"fa fa-building\"></i> Plataforma actual"
                     # You can use relative urls
                     relativeUrl: current-platform/index.html
                 proposed_platform:
-                    text: "<i class=\"fa fa-code\"></i> Plataforma propuesta"
+                    text: "<i class=\"fa fa-city\"></i> Plataforma propuesta"
                     # You can use relative urls
                     relativeUrl: proposed-platform/index.html
                 phases:
-                    text: "<i class=\"fa fa-code-fork\"></i> Fases"
+                    text: "<i class=\"fa fa-walking\"></i> Fases"
                     # You can use relative urls
                     relativeUrl: phases/index.html
                 planning:
-                    text: "<i class=\"fa fa-calendar\"></i> Planificación"
+                    text: "<i class=\"fa fa-calendar-alt\"></i> Planificación"
                     # You can use relative urls
                     relativeUrl: planning/index.html
                 costs:
-                    text: "<i class=\"fa fa-dollar\"></i> Costos"
+                    text: "<i class=\"fa fa-dollar-sign\"></i> Costos"
                     # You can use relative urls
                     relativeUrl: costs/index.html
 
