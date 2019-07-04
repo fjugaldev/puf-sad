@@ -95,6 +95,12 @@ Actualmente se conforma por dos principales proyectos, un proyecto para toda la 
 - Al finalizar una funcionalidad se debe hacer Pull Request (PR) sobre la rama **dev**
 - Cuando se va a pasar a **producción** se debe hacer un release versión con la cognotación vX.X.X, ejemplo: v1.0.0
 - Los hotfix van sobre la rama **master**
+- La rama staging contiene todo lo de **master** mas lo nuevo que se va a integrar desde **dev**, solo se usar para levantar entornos de prueba
+
+### Diagrama de Git Flow
+<img src="https://iamchuka.com/content/images/2018/05/gitflowimage.png" alt="git flow" style="width:50%"/>
+
+<br /><br />
 
 ### Diagrama de la Infrastructura y Arquitectura de Software Propuesta
 <br />
