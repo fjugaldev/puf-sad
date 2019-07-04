@@ -49,9 +49,6 @@ Actualmente se conforma por dos principales proyectos, un proyecto para toda la 
 ### Infraestructura (Infrastructure):
 - Se utiliza una instancia de AWS para el despliegue del proyecto.
 
-### Git Flow Development (Flujo de Desarrollo GIT):
-- Ninguno, no se implementa en lo absoluto un GIT Flow para garantizar consistencia en los repositorios de código y sobre todo brindar seguridad en cada release y poder facilmente hacer reverts en producción. No hay control de versiones en el código.
-
 <br />
 ### API
 <hr />
@@ -87,21 +84,27 @@ Actualmente se conforma por dos principales proyectos, un proyecto para toda la 
 ### Infraestructura (Infrastructure):
 - Se utiliza una instancia de AWS para el despliegue del proyecto.
 
-### Git Flow Development (Flujo de Desarrollo GIT):
+<br />
+
+### Diagrama de la Infrastructura y Arquitectura de Software Propuesta
+<br />
+![](../assets/images/diagrams/proposed_architecture.png)
+
+<br /><br />
+
+## Git Flow Development (Flujo de Desarrollo GIT):
 - Rama **master** para producción
 - Rama **staging** para Testing
 - Rama **dev** para Desarrollo
 - Cada funcionalidad se debe implementar desde una rama nueva la cual debe partir de la rama **dev**.
 - Al finalizar una funcionalidad se debe hacer Pull Request (PR) sobre la rama **dev**
-- Cuando se va a pasar a **producción** se debe hacer un release versión con la cognotación vX.X.X, ejemplo: v1.0.0
+- Cuando se va a pasar a **producción** se debe hacer un release versión con la cognotación vX.Y.Z, ejemplo: v1.0.0
+- La regla de versionado para las releases sera: "**Z**" es la versión de **REVISION** la cual se incrementa cuando se añaden correcciones o bug fixes compatibles con una versión de release publicada, "**Y**" es la versión **MINOR** la cual se incrementa cuando se agrega una nueva funcionalidad compatible con la versión de release publicada y "**X**" es la versión **MAYOR** la cual se incrementa cuando se incorporan nuevas funcionalidades que no existen o que no son compatibles con la versión de release publicada.
 - Los hotfix van sobre la rama **master**
 - La rama staging contiene todo lo de **master** mas lo nuevo que se va a integrar desde **dev**, solo se usar para levantar entornos de prueba
 
-### Diagrama de Git Flow
-<img src="https://iamchuka.com/content/images/2018/05/gitflowimage.png" alt="git flow" style="width:50%"/>
+## Diagrama de Git Flow
+<img class="img-responsive" src="https://iamchuka.com/content/images/2018/05/gitflowimage.png" alt="git flow" />
 
-<br /><br />
-
-### Diagrama de la Infrastructura y Arquitectura de Software Propuesta
-<br />
-![](../assets/images/diagrams/proposed_architecture.png)
+### Diagrama versionamiento de software
+<img class="img-responsive" src="http://www.juntadeandalucia.es/servicios/madeja/sites/default/files/imagecache/wysiwyg_imageupload_lightbox_preset/wysiwyg_imageupload/10/versiones.jpg" alt="git flow" />

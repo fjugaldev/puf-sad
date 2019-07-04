@@ -45,10 +45,10 @@ menu:
                     text: "<i class=\"fa fa-walking\"></i> Fases"
                     # You can use relative urls
                     relativeUrl: phases/index.html
-                planning:
-                    text: "<i class=\"fa fa-calendar-alt\"></i> Planificación"
+                #planning:
+                #    text: "<i class=\"fa fa-calendar-alt\"></i> Planificación"
                     # You can use relative urls
-                    relativeUrl: planning/index.html
+                #    relativeUrl: planning/index.html
                 costs:
                     text: "<i class=\"fa fa-dollar-sign\"></i> Costos"
                     # You can use relative urls
