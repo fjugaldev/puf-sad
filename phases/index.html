@@ -65,11 +65,6 @@
                                         </a>
                                     </li>
                                                                     <li class="">
-                                        <a href="https://fjugaldev.github.io/puf-sad/planning/index.html">
-                                            <i class="fa fa-calendar-alt"></i> Planificación
-                                        </a>
-                                    </li>
-                                                                    <li class="">
                                         <a href="https://fjugaldev.github.io/puf-sad/costs/index.html">
                                             <i class="fa fa-dollar-sign"></i> Costos
                                         </a>
@@ -80,7 +75,34 @@
 
                 
                 <section class="col-sm-offset-4 col-lg-offset-3 col-sm-8 col-lg-9">
-                    
+                    <h2 id="definicin-de-refactoring-recomendado">DEFINICIÓN DE REFACTORING RECOMENDADO</h2>
+<p>Luego de la revisión exhaustiva de la plataforma actual, en específico del proyecto para la web (frontend) y el proyecto para el API (Backend) se recomienda realizar un refactoring de ambos proyectos. Un refactoring se refiere a la reescritura de un software desde cero pero manteniendo el know-how actual y lógicas de negocio existentes.</p>
+<p>En principio lo deseable de este refactoring para cada proyecto se detalla a continuación:
+<br/><br/></p>
+<ul>
+<li><strong>CARGAR WEB DIRECTAMENTE DESDE EL MOTOR DE VUE.JS</strong>: Para el proyecto de la web, se recomienda que la carga de la SPA (Single Page Application), en este caso, elaborada con el framework de Javascript Vue.js, se haga con el motor directamente de Vue.js y no desde una plantilla de Laravel, esto ayudaría significativamente en el rendimiento y optimización de la web.
+<br/><br/></li>
+<li><strong>ELIMINAR API EN PROYECTO WEB</strong>: Actualmente existe un API dentro del proyecto WEB en Laravel para servir al frontend de rutas internas las cuales posteriormente realizan autenticación contra el proyecto del API y redirigen nuevamente una petición al API para extraer los datos finales. No logro entender el porque se usaron 2 API para la definición de la arquitectura de Software. El API es la pieza fundamental que provee de los datos y validaciones necesarias al frontend. En este caso, el API se dividio en dos proyectos monolíticos lo cual no tiene sentido. Si se estuviese tratando de un API dividido en microservicios, la cosa sería diferente ya que por la naturaleza de este concepto, cada microservicio cumplirá una única responsabilidad. Para eliminar el API existente en el proyecto web, basta con eliminar la llamada al API interno y hacerlo sobre el API principal.
+<br/><br/></li>
+<li><strong>REFACTORIZAR EL API</strong>: El API actual esta escrito usando el framework <strong>Laravel</strong> con una capa por encima llamada <strong>Apiato.io</strong>. Para este punto recomiendo realizar una reescritura de cada endpoint o ruta del API en un proyecto mas robusto, usando el framework <strong>Symfony</strong> en su última versión e implementando internamente una <strong>arquitectura hexagonal</strong> en conjunto con <strong>Domain Driven Design (DDD)</strong>, lo cual garantiza un desacople de la lógica de dominio y negocio, del framework propiamente permitiendo a futuro que si es requerido migrar a otro framework, el trabajo se haga de forma simple y rápida.
+<br/><br/></li>
+<li><strong>IMPLEMENTAR GIT FLOW</strong>: Es necesario establecer un git flow para todo el proceso de desarrollo lo cual permita manejar versionamiento de software mediante los tags de git para poder desplegar en función de versiones y poder mantener un punto de comparación entre los cambios de la versión en producción y los cambios nuevos a implementar, de modo que si algo falla, se pueda o bien hacer un hotfix o en su defecto volver fácilmente a una versión anterior. Actualmente como se viene trabajando, es prácticamente imposible.
+<br/><br/></li>
+</ul>
+<p>Para los refactoring previamente definidos, se establecen las siguientes fases:</p>
+<h2 id="fase-i">FASE I:</h2>
+<ul>
+<li>IMPLEMENTAR GIT FLOW</li>
+<li>REFACTORIZAR EL API</li>
+</ul>
+<h2 id="fase-ii">FASE II</h2>
+<ul>
+<li>ELIMINAR API EN PROYECTO WEB</li>
+</ul>
+<h2 id="fase-iii">FASE III</h2>
+<ul>
+<li>CARGAR WEB DIRECTAMENTE DESDE EL MOTOR DE VUE.JS</li>
+</ul>
                 </section>
 
             </div>

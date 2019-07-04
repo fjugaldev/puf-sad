@@ -65,11 +65,6 @@
                                         </a>
                                     </li>
                                                                     <li class="">
-                                        <a href="https://fjugaldev.github.io/puf-sad/planning/index.html">
-                                            <i class="fa fa-calendar-alt"></i> Planificación
-                                        </a>
-                                    </li>
-                                                                    <li class="">
                                         <a href="https://fjugaldev.github.io/puf-sad/costs/index.html">
                                             <i class="fa fa-dollar-sign"></i> Costos
                                         </a>
@@ -130,10 +125,6 @@
 <ul>
 <li>Se utiliza una instancia de AWS para el despliegue del proyecto.</li>
 </ul>
-<h3 id="git-flow-development-flujo-de-desarrollo-git">Git Flow Development (Flujo de Desarrollo GIT):</h3>
-<ul>
-<li>Ninguno, no se implementa en lo absoluto un GIT Flow para garantizar consistencia en los repositorios de código y sobre todo brindar seguridad en cada release y poder facilmente hacer reverts en producción. No hay control de versiones en el código.</li>
-</ul>
 <p><br /></p>
 <h3 id="api">API</h3>
 <hr />
@@ -175,23 +166,27 @@
 <ul>
 <li>Se utiliza una instancia de AWS para el despliegue del proyecto.</li>
 </ul>
-<h3 id="git-flow-development-flujo-de-desarrollo-git-1">Git Flow Development (Flujo de Desarrollo GIT):</h3>
+<p><br /></p>
+<h3 id="diagrama-de-la-infrastructura-y-arquitectura-de-software-propuesta">Diagrama de la Infrastructura y Arquitectura de Software Propuesta</h3>
+<p><br />
+<img src="../assets/images/diagrams/proposed_architecture.png" alt="" /></p>
+<p><br /><br /></p>
+<h2 id="git-flow-development-flujo-de-desarrollo-git">Git Flow Development (Flujo de Desarrollo GIT):</h2>
 <ul>
 <li>Rama <strong>master</strong> para producción</li>
 <li>Rama <strong>staging</strong> para Testing</li>
 <li>Rama <strong>dev</strong> para Desarrollo</li>
 <li>Cada funcionalidad se debe implementar desde una rama nueva la cual debe partir de la rama <strong>dev</strong>.</li>
 <li>Al finalizar una funcionalidad se debe hacer Pull Request (PR) sobre la rama <strong>dev</strong></li>
-<li>Cuando se va a pasar a <strong>producción</strong> se debe hacer un release versión con la cognotación vX.X.X, ejemplo: v1.0.0</li>
+<li>Cuando se va a pasar a <strong>producción</strong> se debe hacer un release versión con la cognotación vX.Y.Z, ejemplo: v1.0.0</li>
+<li>La regla de versionado para las releases sera: &quot;<strong>Z</strong>&quot; es la versión de <strong>REVISION</strong> la cual se incrementa cuando se añaden correcciones o bug fixes compatibles con una versión de release publicada, &quot;<strong>Y</strong>&quot; es la versión <strong>MINOR</strong> la cual se incrementa cuando se agrega una nueva funcionalidad compatible con la versión de release publicada y &quot;<strong>X</strong>&quot; es la versión <strong>MAYOR</strong> la cual se incrementa cuando se incorporan nuevas funcionalidades que no existen o que no son compatibles con la versión de release publicada.</li>
 <li>Los hotfix van sobre la rama <strong>master</strong></li>
 <li>La rama staging contiene todo lo de <strong>master</strong> mas lo nuevo que se va a integrar desde <strong>dev</strong>, solo se usar para levantar entornos de prueba</li>
 </ul>
-<h3 id="diagrama-de-git-flow">Diagrama de Git Flow</h3>
-<img src="https://iamchuka.com/content/images/2018/05/gitflowimage.png" alt="git flow" style="width:50%"/>
-<p><br /><br /></p>
-<h3 id="diagrama-de-la-infrastructura-y-arquitectura-de-software-propuesta">Diagrama de la Infrastructura y Arquitectura de Software Propuesta</h3>
-<p><br />
-<img src="../assets/images/diagrams/proposed_architecture.png" alt="" /></p>
+<h2 id="diagrama-de-git-flow">Diagrama de Git Flow</h2>
+<img class="img-responsive" src="https://iamchuka.com/content/images/2018/05/gitflowimage.png" alt="git flow" />
+<h3 id="diagrama-versionamiento-de-software">Diagrama versionamiento de software</h3>
+<img class="img-responsive" src="http://www.juntadeandalucia.es/servicios/madeja/sites/default/files/imagecache/wysiwyg_imageupload_lightbox_preset/wysiwyg_imageupload/10/versiones.jpg" alt="git flow" />
                 </section>
 
             </div>
