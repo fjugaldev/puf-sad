@@ -23,8 +23,8 @@ Para los refactoring previamente definidos, se establecen las siguientes fases:
 - IMPLEMENTAR GIT FLOW
 - REFACTORIZAR EL API
 
-## FASE II
+## FASE II:
 - ELIMINAR API EN PROYECTO WEB
 
-## FASE III
+## FASE III:
 - CARGAR WEB DIRECTAMENTE DESDE EL MOTOR DE VUE.JS
