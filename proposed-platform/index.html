@@ -103,15 +103,20 @@
 </ul>
 <h4 id="framework">Framework:</h4>
 <ul>
-<li>Laravael v5.7 + Vue.js</li>
+<li>NodeJS + Vue.js</li>
 </ul>
 <h3 id="buenas-prcticas">Buenas Prácticas:</h3>
 <ul>
-<li>Escasas, de hecho no se implementan las buenas prácticas oficiales del Framework.</li>
+<li>Vue.js implementa muy buenas prácticas a la hora de estructurar los directorios.</li>
+<li>Vue.js implementa buenas prácticas en cuanto a el uso de stores, routing y más.</li>
+<li>DRY (Don't Repeat Yourself), evitar duplicidad de codigo.</li>
+<li>KISS (Keep It Simple Stupid), evitar hacer código espaguetti para cosas tan sencillas que pueden hacerce en unas pocas lineas de código. </li>
 </ul>
 <h3 id="coding-style">Coding Style:</h3>
 <ul>
-<li>Inexistente, no hay reglas de identación, no se respetan espaciados entre metodos, entre muchos otros errores más.</li>
+<li>Correcta identación del codigo.</li>
+<li>Cero comentarios donde el codigo es mas que tácito para cualquier programador.</li>
+<li>Evitar dejar codigo comentado que no se utiliza.</li>
 </ul>
 <h3 id="patrones-de-diseo-design-patterns">Patrones de Diseño (Design Patterns):</h3>
 <ul>
@@ -141,23 +146,30 @@
 </ul>
 <h4 id="framework-1">Framework:</h4>
 <ul>
-<li>Laravael v5.7 + Apiato.io</li>
+<li>Symfony 4</li>
 </ul>
 <h3 id="buenas-prcticas-1">Buenas Prácticas:</h3>
 <ul>
-<li>Escasas, de hecho no se implementan las buenas prácticas oficiales del Framework. Se implementan las de un tercero --&gt; Apiato.io</li>
+<li>Las sugeridas por Symfony en su versión 4.0 en cuanto a convención de nombres, directorios, formularios  entre otros.</li>
+<li>DRY (Don't Repeat Yourself), evitar duplicidad de codigo.</li>
+<li>KISS (Keep It Simple Stupid), evitar hacer código espaguetti para cosas tan sencillas que pueden hacerce en unas pocas lineas de código.</li>
 </ul>
 <h3 id="coding-style-1">Coding Style:</h3>
 <ul>
-<li>Inexistente, no hay reglas de identación, no se respetan espaciados entre metodos, entre muchos otros errores más.</li>
+<li>Por defecto Symfony implementa los estándares PSR-1, PSR-2 y PSR-4</li>
 </ul>
 <h3 id="patrones-de-diseo-design-patterns-1">Patrones de Diseño (Design Patterns):</h3>
 <ul>
-<li>Se utilizan los propuestos por un tercero --&gt; Apiato.io</li>
+<li>Aplicar los 5 principios de SOLID.</li>
+<li>Facade</li>
+<li>Factory Method</li>
+<li>Port and Adapters</li>
 </ul>
 <h3 id="arquitectura-de-software-software-architecture-1">Arquitectura de Software (Software Architecture):</h3>
 <ul>
-<li>Se utiliza la por defecto del Framework más los propuestos por un tercero --&gt; Apiato.io</li>
+<li>Hexagonal Architecture</li>
+<li>Domain Driven Design (DDD)</li>
+<li>CQRS (Command Query Responsability Segregation)</li>
 </ul>
 <h3 id="infraestructura-infrastructure-1">Infraestructura (Infrastructure):</h3>
 <ul>
@@ -165,7 +177,13 @@
 </ul>
 <h3 id="git-flow-development-flujo-de-desarrollo-git-1">Git Flow Development (Flujo de Desarrollo GIT):</h3>
 <ul>
-<li>Ninguno, no se implementa en lo absoluto un GIT Flow para garantizar consistencia en los repositorios de código y sobre todo brindar seguridad en cada release y poder facilmente hacer reverts en producción. No hay control de versiones en el código.</li>
+<li>Rama <strong>master</strong> para producción</li>
+<li>Rama <strong>staging</strong> para Testing</li>
+<li>Rama <strong>dev</strong> para Desarrollo</li>
+<li>Cada funcionalidad se debe implementar desde una rama nueva la cual debe partir de la rama <strong>dev</strong>.</li>
+<li>Al finalizar una funcionalidad se debe hacer Pull Request (PR) sobre la rama <strong>dev</strong></li>
+<li>Cuando se va a pasar a <strong>producción</strong> se debe hacer un release versión con la cognotación vX.X.X, ejemplo: v1.0.0</li>
+<li>Los hotfix van sobre la rama <strong>master</strong></li>
 </ul>
 <h3 id="diagrama-de-la-infrastructura-y-arquitectura-de-software-propuesta">Diagrama de la Infrastructura y Arquitectura de Software Propuesta</h3>
 <p><br />
